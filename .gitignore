@@ -1,0 +1,24 @@
+# data — no subject data in repo
+data/an_patients/
+data/hc_patients/
+data/analysis/
+
+# outputs
+output/
+
+# cache
+nilearn_cache/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# editor
+*.xlsx
+~$*
+
+# legacy root-level outputs
+anorexia_modularity_gridsearch.*
