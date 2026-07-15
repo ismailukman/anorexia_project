@@ -1,10 +1,26 @@
-# Anorexia Nervosa — Dynamic Functional Connectivity Analysis
+# Anorexia Nervosa (AN) Analysis
 
-fMRI resting-state analysis pipeline investigating dynamic functional connectivity (DFC) differences between anorexia nervosa (AN) patients and healthy controls (HC).
+![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white&style=flat-square)
+![MATLAB](https://img.shields.io/badge/MATLAB-R2021b%2B-0076A8?logo=mathworks&logoColor=white&style=flat-square)
+![Conda](https://img.shields.io/badge/conda-fmri-44A833?logo=anaconda&logoColor=white&style=flat-square)
+![nilearn](https://img.shields.io/badge/nilearn-0.10%2B-4B8BBE?style=flat-square)
+![Modality](https://img.shields.io/badge/modality-resting--state%20fMRI-7B68EE?style=flat-square)
+![Method](https://img.shields.io/badge/method-MLCD%20·%20GenLouvain-5C4DBE?style=flat-square)
+![Atlas](https://img.shields.io/badge/atlas-Schaefer--200%20·%20Tian%20S2-4682B4?style=flat-square)
+![Cohort](https://img.shields.io/badge/cohort-22%20AN%20·%2022%20HC%20(N%3D44)-E8622A?style=flat-square)
+![Windows](https://img.shields.io/badge/windows-~663%20per%20subject-557A95?style=flat-square)
+![Status](https://img.shields.io/badge/status-in%20progress-F5A623?style=flat-square)
+
+Resting-state fMRI pipeline comparing functional connectivity between anorexia nervosa (AN) patients and healthy controls (HC) across both static and dynamic analyses.
 
 ## Goal
 
-Use Multi-Layer Community Detection (MLCD) on sliding-window Pearson correlation matrices to characterise how brain network organisation changes over time, and whether those changes differ between AN and HC.
+Quantify functional connectivity differences between AN and HC at ROIs of interest using two complementary approaches:
+
+- **Static FC** — a single full-scan Pearson correlation matrix per subject, providing a mean connectivity baseline across the session.
+- **Dynamic FC (DFC)** — sliding-window correlation matrices submitted to Multi-Layer Community Detection (MLCD), capturing how network community structure reorganises over time.
+
+Comparing static and dynamic results at the same ROIs distinguishes group differences that reflect stable mean connectivity from those that emerge in temporal network dynamics — or both.
 
 ## Atlas
 
@@ -13,6 +29,9 @@ Use Multi-Layer Community Detection (MLCD) on sliding-window Pearson correlation
 - **Combined**: 216 regions (200 cortical + 16 subcortical)
 
 ## Pipeline
+
+<details>
+<summary>Show pipeline steps</summary>
 
 | Step | Script | Description |
 |------|--------|-------------|
@@ -31,6 +50,8 @@ Use Multi-Layer Community Detection (MLCD) on sliding-window Pearson correlation
 | 4b | `04b_visualization_subcortical.py` | Subcortical figures |
 
 MATLAB scripts for MLCD are in `code/matlab/`.
+
+</details>
 
 ## Parameters
 
