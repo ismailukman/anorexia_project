@@ -17,10 +17,10 @@ Resting-state fMRI pipeline comparing functional connectivity between anorexia n
 
 Quantify functional connectivity differences between AN and HC at ROIs of interest using two complementary approaches:
 
-- **Static FC** — a single full-scan Pearson correlation matrix per subject, providing a mean connectivity baseline across the session.
-- **Dynamic FC (DFC)** — sliding-window correlation matrices submitted to Multi-Layer Community Detection (MLCD), capturing how network community structure reorganises over time.
+- **Static FC**: a single full-scan Pearson correlation matrix per subject, providing a mean connectivity baseline across the session.
+- **Dynamic FC (DFC)**: sliding-window correlation matrices submitted to Multi-Layer Community Detection (MLCD), capturing how network community structure reorganises over time.
 
-Comparing static and dynamic results at the same ROIs distinguishes group differences that reflect stable mean connectivity from those that emerge in temporal network dynamics — or both.
+Comparing static and dynamic results at the same ROIs distinguishes group differences that reflect stable mean connectivity from those that emerge in temporal network dynamics, or both.
 
 ## Atlas
 
